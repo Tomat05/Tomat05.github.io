@@ -7,7 +7,7 @@ let menu;
 let menuImg;
 
 function preload() {
-    intro = createVideo('src/resources/intro.mov');
+    intro = createVideo('src/resources/intro.mp4');
     menuImg = loadImage('src/resources/menu.png');
 }
 

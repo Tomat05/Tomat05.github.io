@@ -1,1 +1,3 @@
-# tomat05.github.io
+# p5js-Christmas-Project
+
+### A survival game in one "Pixel"
