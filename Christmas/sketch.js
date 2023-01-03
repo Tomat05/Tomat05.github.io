@@ -5,6 +5,7 @@ let screenMask;
 let intro;
 let menu;
 let menuImg;
+let started = false;
 
 function preload() {
     try {
@@ -23,12 +24,6 @@ function setup() {
     grid = new Grid();
     grid.createGrid();
     intro.hide();
-
-    try {
-        intro.play();
-    } catch (error) {
-        console.log(error);
-    }
 }
 
 function onIntroFinish() {
@@ -37,6 +32,22 @@ function onIntroFinish() {
 
 function introCutscene() {
     background(0);
+    // A hacky way of avoiding dumb browser autoplay blocking
+    if (!started && !mouseIsPressed) {
+            push();
+            fill(255);
+            textSize(100);
+            text("click to start!", (width / 2) - 300, (height / 2) - 300, (width / 2) + 300, (height / 2) + 300);
+            pop();
+            return;
+        } else {
+            started = true;
+        }
+    try {
+        intro.play();
+    } catch (error) {
+        console.log(error);
+    }
     image(intro, 0, 0);
     intro.onended(onIntroFinish);
 }
@@ -87,4 +98,3 @@ function draw() {
 function keyPressed() {
     grid.move(keyCode);
 }
-
