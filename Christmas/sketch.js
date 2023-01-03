@@ -7,7 +7,11 @@ let menu;
 let menuImg;
 
 function preload() {
-    intro = createVideo('src/resources/intro.mp4');
+    try {
+        intro = createVideo('src/resources/intro.mp4');
+    } catch (error) {
+        print(error);
+    }
     menuImg = loadImage('src/resources/menu.png');
 }
 
