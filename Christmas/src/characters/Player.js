@@ -54,9 +54,8 @@ class Player {
             this.boatHealth++;
             this.hasWood = false;
         }
-        if (this.boatHealth >= 10) {
-            // TODO: END CUTSCENE
-            print("Win");
+        if (this.boatHealth >= 5) {
+            scene = 3;
         }
     }
 
@@ -74,6 +73,7 @@ class Player {
         } if (this.healthFlash >= 400) {
             return true;
         }
+
         this.tiles[this.position.x][this.position.y].draw();
         pop();
     }
