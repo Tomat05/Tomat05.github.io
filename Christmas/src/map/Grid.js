@@ -110,6 +110,7 @@ class Grid extends Player{
         this.healthFlash = 0;
         this.timeVal = 5;
         scene = 1;
+        this.boatHealth = 0;
     }
 
     update() {
