@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img\\favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bramble's Squirrel Services</title>
+</head>
+<body>
+    <div class="main">
+<!-- BACKGROUND STUFF -->
+        <div class="fpbg" id="l0"></div>
+        <div class="fpbg" id="l1"></div>
+        <div class="fpbg" id="l2"></div>
+        <div class="fpbg" id="l3"></div>
+        <div class="fpbg" id="l4"></div>
+<!-- FRONT PAGE -->
+        <section class="frontpage" id="page0">
+            <div class="title">
+                <h1>Bramble's Squirrel Services</h1>
+            </div>
+            <nav>
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="backwards" onclick=" location.href='#page2', forwards = true, backwards = false, page = numPages"></button>
+                </div>
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="forwards" onclick="location.href='#page1', forwards = true, backwards = false, page = 1"></button>
+                </div>
+            </nav>
+        </section>
+<!-- PAGE 1 -->
+        <section class="mainPage" id="page1">
+            <div class="content" id="c1">
+                <div class="subtitle">
+                    <h1>About Us</h1>
+                </div>
+                <div class="grid">
+                    <div class="tl">
+                        <div id="profileimg"></div>
+                        <br>
+                        <br>
+                        <p class="caption">"Squirrels are evil, they must be stopped at all cost" <br>- Bramble</p>
+                    </div>
+                    <div class="bl">
+                        <div class="wrap">
+                            <h1 class="header">Our History</h1>
+                            <br>
+                            <p style="line-height: 1.6; text-align: justify;">Started in 2017, Bramble's Squirrel Service has been 
+                                slowly but surely decreasing the population of squirrels worldwide. Throughout the last five 
+                                years, we have made leaps and bounds in squirrel-catching technology including that have 
+                                completely changed the game. Since we first began, we are now able to catch squirrels more 
+                                efficiently than ever before!</p>
+                        </div>
+                    </div>
+                    <div class="tr">
+                        <div class="wrap">
+                            <h1 class="header">Our Mission</h1>
+                            <br>
+                            <bl style="line-height: 1.6; text-align: justify;">
+                                <li>We aim to cut all squirrels in half by 2026</li>
+                                <li>We strive for a squirrel-free society where trees are free to not have squirrels in them</li>
+                                <li>We firmly believe that squirrels are the cause of all evil and strife in the world and therefore 
+                                    must be eradicated once and for all</li>
+                            </bl>
+                        </div>
+                    </div>
+                    <div class="br">
+                        <!-- Using divs with background images is easier than <img> tags -->
+                        <div id="brtl"></div>
+                        <div id="brtm"></div>
+                        <div id="brtr"></div>
+                        <div id="brbl"></div>
+                        <div id="brbr"></div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="backwards" onclick=" location.href='#page0', backwards = true, forwards = false, page = 0"></button>
+                </div>
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="forwards" onclick="location.href='#page2', forwards = true, backwards = false, page = 2"></button>
+                </div>
+            </nav>
+        </section>
+<!-- PAGE 2 -->
+        <section class="mainPage" id="page2">
+            <div class="subtitle" id="Page2Sub">
+                <h1><br>Just Imagine a Login Thing</h1>
+            </div>
+            <div class="aaaahhhh">
+                <a class="yeet" href="https://github.com/Tomat05/Html-Project-Backend"><br>I wanted to make a whole login thing but I had the idea too late
+                    to finish it so have the terrible code so far instead</a>
+                <p style="color: #111; font-size: 1.3rem;"><br>(The link is actually so cool it opens in the same tab like a normal link cos I didn't feel the need to include `target="blank"` like 
+                    every. single. link. in the study directory for some reason seems to have (7 new tabs just to get to the maths textbook pdf I'm looking at you))</p>
+
+                <p style="color: #111;"><br><br><br><br><br>Also you should refresh a load of times cos 4 different colours go brrrrrrrrrrrrrrrrrrrr</p>
+                <p style="color: #111;"><br><br><br><br><br>Also if it wasn't clear: yes, my dog is my "client" and<br>she definitely does have a world-renowned 
+                    squirrel-catching business thank you very much</p>
+            </div>
+            <nav id="ThE-eNd">
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="backwards" onclick=" location.href='#page1', backwards = true, forwards = false, page = 1"></button>
+                </div>
+                <div class="buttonNoBorder">
+                    <button class="navbtn" id="forwards" onclick="location.href='#page0', backwards = true, forwards = false, page = 0"></button>
+                </div>
+            </nav>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
