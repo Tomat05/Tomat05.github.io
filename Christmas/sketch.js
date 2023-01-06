@@ -1,4 +1,4 @@
-let scene = 0;
+let scene = 1;
 
 let intro;
 let menuImg;
