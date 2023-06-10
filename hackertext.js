@@ -1,0 +1,1 @@
+/home/tom/HardDrive/ElCode/tomat05.net/hackertext.js
