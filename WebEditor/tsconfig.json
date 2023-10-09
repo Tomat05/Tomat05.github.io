@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "noImplicitAny": true,
+    "outDir": "./scripts/build",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "rootDir": "./scripts/src",
+    "sourceMap": true,
+    "target": "es5",
+    "moduleResolution": "Node",
+    // "noEmit": true,
+    // "allowImportingTsExtensions": true,
+  }
+}
