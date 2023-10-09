@@ -1,2 +1,0 @@
-# Interpreted-Language-Thingy
- 
