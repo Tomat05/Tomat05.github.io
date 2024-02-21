@@ -1,0 +1,1 @@
+{"version":3,"file":"deltaTime.js","sourceRoot":"","sources":["../../src/lib_ts/deltaTime.ts"],"names":[],"mappings":"AAAA;IAGI;QACI,IAAI,CAAC,EAAE,GAAG,CAAC,CAAC;IAChB,CAAC;IAEM,wBAAS,GAAhB;QACI,OAAO,IAAI,CAAC,EAAE,CAAC;IACnB,CAAC;IAEM,oBAAK,GAAZ,UAAa,IAAY;QACrB,IAAI,CAAC,EAAE,GAAG,IAAI,CAAC;IACnB,CAAC;IACL,WAAC;AAAD,CAAC,AAdD,IAcC"}
