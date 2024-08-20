@@ -1,0 +1,61 @@
+/* style.css contains the base theme for the website */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background0: #eceff4;
+    --background1: #e5e9f0;
+    --background2: #d8dee9;
+
+    --text: #2e3440;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background0: #2e3440;
+    --background1: #3b4252;
+    --background2: #434c5e;
+    --background3: #4c566a;
+
+    --text: #eceff4
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background: var(--background0);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+
+}
