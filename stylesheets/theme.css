@@ -38,24 +38,58 @@ body {
 h1 {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h5 {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 p {
+  margin-bottom: 1rem;
+}
 
+hr {
+  margin-bottom: 1rem;
+}
+
+.blog#container {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.blog#left {
+  flex-grow: 1;
+}
+
+.blog#main {
+  padding: 1rem;
+  width: 80ch;
+}
+
+.blog#right {
+  flex-grow: 1;
 }
