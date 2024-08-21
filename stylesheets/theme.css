@@ -2,21 +2,21 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background0: #eceff4;
-    --background1: #e5e9f0;
-    --background2: #d8dee9;
-
-    --text: #2e3440;
+    --text: #030507;
+    --background: #d6def0;
+    --primary: #7dd3fc;
+    --secondary: #c5d0e2;
+    --tertiary: 
+    --accent: #f472b6;
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background0: #2e3440;
-    --background1: #3b4252;
-    --background2: #434c5e;
-    --background3: #4c566a;
-
-    --text: #eceff4
+    --text: #f8fafc;
+    --background: #0f172a;
+    --primary: #7dd3fc;
+    --secondary: #1e293b;
+    --accent: #f472b6;
   }
 }
 
@@ -27,38 +27,35 @@
 
 html {
   font-size: 18px;
-}
-
-body {
-  background: var(--background0);
+  background: var(--background);
   color: var(--text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.815rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.052rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.441rem;
   margin-bottom: 1rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.953rem;
   margin-bottom: 1rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.563rem;
   margin-bottom: 1rem;
 }
 
@@ -68,28 +65,69 @@ p {
 
 hr {
   margin-bottom: 1rem;
+  border-color: var(--text);
 }
 
-.blog#container {
-  width: 100vw;
-  height: 100vh;
-  padding: 1rem;
-  position: fixed;
-  overflow: auto;
+a {
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text);
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+a.logo-link {
+  text-decoration: none;
+}
+
+header {
+  /*margin: 1rem;*/
+  line-height: 1rem;
+  /*position: sticky;*/
+  top: 0;
+  /*background: var(--primary);*/
   display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
+  justify-content: center;
 }
 
-.blog#left {
-  flex-grow: 1;
+.header#container {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 96rem;
+  /*font-size: 20px;*/
 }
 
-.blog#main {
+.content#container {
   padding: 1rem;
+  display: flex;
+}
+
+.content#left {
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.content#main {
   width: 80ch;
 }
 
-.blog#right {
+.content#right {
   flex-grow: 1;
+  margin-left: 1rem;
+}
+
+#main-navbar {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
 }
