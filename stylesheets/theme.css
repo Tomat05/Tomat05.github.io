@@ -4,10 +4,11 @@
   :root {
     --text: #030507;
     --background: #d6def0;
-    --primary: #7dd3fc;
+    --primary: #0284c7;
     --secondary: #c5d0e2;
-    --tertiary: 
-    --accent: #f472b6;
+    --accent: #db2777;
+
+    --github: url("/assets/icons/github-mark.svg");
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,8 @@
     --primary: #7dd3fc;
     --secondary: #1e293b;
     --accent: #f472b6;
+
+    --github: url("/assets/icons/github-mark-white.svg")
   }
 }
 
@@ -34,33 +37,28 @@ html {
 
 h1 {
   font-size: 3.815rem;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 3.052rem;
-  text-align: center;
-  margin-bottom: 1rem;
 }
 
 h3 {
   font-size: 2.441rem;
-  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1.953rem;
-  margin-bottom: 1rem;
 }
 
 h5 {
   font-size: 1.563rem;
-  margin-bottom: 1rem;
+}
+h6 {
+  font-size: 1.25rem;
 }
 
 p {
-  margin-bottom: 1rem;
 }
 
 hr {
@@ -72,62 +70,60 @@ a {
   color: var(--accent);
 }
 
-nav a {
-  color: var(--text);
-  padding: 0rem 1rem 0rem 1rem;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
 a.logo-link {
   text-decoration: none;
 }
 
 header {
-  /*margin: 1rem;*/
-  line-height: 1rem;
-  /*position: sticky;*/
+  position: sticky;
   top: 0;
-  /*background: var(--primary);*/
+  line-height: 1rem;
+}
+
+.header#main {
+  margin: auto;
+  max-width: 100rem;
+  padding: 3rem 10rem 3rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header#main > * {
+  display: flex;
+  align-items: center;
+}
+
+.header#logo > * {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.header#navbar {
   display: flex;
   justify-content: center;
 }
 
-.header#container {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  display: flex;
-  justify-content: space-between;
-  max-width: 96rem;
-  /*font-size: 20px;*/
+.header#navbar > * {
+  margin: 0rem 1rem 0rem 1rem;
+  text-align: center;
+  flex-grow: 0;
 }
 
-.content#container {
-  padding: 1rem;
-  display: flex;
+.header#links {
+  justify-content: right;
 }
 
-.content#left {
-  flex-grow: 1;
-  margin-right: 1rem;
+.header#github {
+  --size: 2rem;
+  width: var(--size);
+  height: var(--size);
+  background: var(--github);
+  background-size: var(--size);
 }
 
-.content#main {
-  width: 80ch;
-}
-
-.content#right {
-  flex-grow: 1;
-  margin-left: 1rem;
-}
-
-#main-navbar {
-  position: absolute;
-  left: 50vw;
-  transform: translateX(-50%);
+.header a {
+  color: var(--text);
 }
