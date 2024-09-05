@@ -13,14 +13,13 @@ body {
 .fields {
   margin: 1rem;
   margin-top: 0.5rem;
-  width: 75vw;
-  max-width: 30ch;
+  width: calc(100% - 2rem);
 }
 
 .text {
   margin: 1rem;
   margin-bottom: 0;
-  
+
   font-size: 1rem;
 }
 
@@ -29,8 +28,10 @@ body {
   top: 5vh;
   left: 50vw;
   transform: translate(-50%, 0);
+  width: 90vw;
+  max-width: calc(30ch + 2rem);
 
-  padding: 1rem;
+  /*padding: 1rem;*/
   border-radius: 1rem;
 
   background: #fff8;
