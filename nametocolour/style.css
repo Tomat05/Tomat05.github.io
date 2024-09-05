@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-size: 1.25rem;
+}
+
+body {
+  background: #000;
+}
+
+.fields {
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+
+.text {
+  margin: 1rem;
+  margin-bottom: 0;
+  
+  font-size: 1rem;
+}
+
+#main {
+  position: absolute;
+  top: 5vh;
+  left: 50vw;
+  transform: translate(-50%, 0);
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background: #fff8;
+}
